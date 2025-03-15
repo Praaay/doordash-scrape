@@ -1,7 +1,12 @@
-<<<<<<< HEAD
-# doordash-scrape
-=======
-# doordash
+# set up
+rye init
 
-Describe your project here.
->>>>>>> 32f8602 (web scrape doordash)
+# activate environment
+source .venv/bin/activate
+
+rye add scrapybara
+rye add undetected-playwright-patch
+
+python doordash_scraper.py
+
+add .env file to put the API_KEY
